@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Painel · Conteúdo Eleições 2026</title>
+<style>
+  :root {
+    --bg:#0F1B2D; --card:#16263E; --ink:#F0F4FA;
+    --mute:#96A5B9; --accent:#FFD24C;
+    --a:#5AC8BE; --b:#F5A05A;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.5; }
+  header { padding:28px 20px 20px; border-bottom:1px solid rgba(255,255,255,.08);
+    position:sticky; top:0; background:var(--bg); z-index:10; }
+  h1 { margin:0; font-size:20px; letter-spacing:.2px; }
+  .sub { color:var(--mute); font-size:13px; margin-top:6px; }
+  .countdown { display:inline-block; margin-top:12px; padding:8px 14px; border-radius:999px;
+    background:var(--accent); color:var(--bg); font-weight:700; font-size:14px; }
+  main { padding:20px; max-width:1100px; margin:0 auto;
+    display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:16px; }
+  .card { background:var(--card); border-radius:16px; padding:20px 22px;
+    border:1px solid rgba(255,255,255,.06); }
+  .card h2 { margin:0 0 12px; font-size:15px; text-transform:uppercase;
+    letter-spacing:1px; color:var(--accent); }
+  ul { margin:0; padding-left:18px; }
+  li { margin:7px 0; }
+  li.vazio { color:var(--mute); list-style:none; margin-left:-18px; font-style:italic; }
+  a { color:var(--ink); text-decoration:none; border-bottom:1px solid rgba(255,255,255,.2); }
+  a:hover { border-color:var(--accent); color:var(--accent); }
+  .link { display:inline-block; margin-top:14px; color:var(--accent); border:0; font-weight:600; }
+  .nums { display:flex; gap:22px; margin-bottom:8px; }
+  .num b { font-size:28px; color:var(--accent); display:block; }
+  .num span { font-size:12px; color:var(--mute); }
+  .chip { display:inline-block; padding:2px 10px; border:1px solid; border-radius:999px;
+    font-size:12px; margin:2px 4px 2px 0; }
+  footer { color:var(--mute); font-size:12px; text-align:center; padding:28px 20px 40px; }
+  .full { grid-column:1/-1; }
+</style>
+</head>
+<body>
+<header>
+  <h1>🗳️ Painel de Conteúdo · Eleições 2026</h1>
+  <div class="sub">@seu_perfil · atualizado em 07/10/2026 20:18</div>
+  <div class="countdown">⏳ 18 dias para o 2º turno (25/10)</div>
+</header>
+<main>
+  <section class="card full">
+    <h2>📊 📊 Briefing — 07/10/2026 (terça-feira)</h2>
+    <ul><li>2º turno confirmado e apertado. No 1º turno (04/10), Flávio Bolsonaro teria ficado à frente (~47% dos válidos) contra ~45% de Lula — a menor diferença de 1º turno desde a redemocratização. Narrativa histórica em circulação: &quot;líder do 1º turno nunca perdeu desde 1989&quot; — bom gancho, mas exige contexto (amostra pequena de eleições, não é lei).</li><li>Corrida pelo voto do centro. Com os eliminados do 1º turno (ex.: Caiado, 5º lugar), o jogo dos próximos 18 dias é apoio/transferência de votos. Tema fértil para explicar &quot;pra onde vai o voto de quem perdeu&quot;.</li><li>Abstenção e voto útil viram assunto central do 2º turno — ótimo para educação cívica.</li></ul>
+    <a class="link" href="../00-inteligencia/briefings/2026-10-07.md">abrir briefing completo →</a>
+  </section>
+
+  <section class="card">
+    <h2>🗂️ Banco de Pautas</h2>
+    <div class="nums">
+      <div class="num"><b>5</b><span>a avaliar</span></div>
+      <div class="num"><b>1</b><span>aprovadas</span></div>
+      <div class="num"><b>0</b><span>publicadas</span></div>
+    </div>
+    <strong style="font-size:13px;color:var(--mute)">Aprovadas</strong>
+    <ul><li>Como funciona a esquerda e a direita?</li></ul>
+    <strong style="font-size:13px;color:var(--mute)">A avaliar</strong>
+    <ul><li>Maioridade penal: o que cada lado propõe (e o que diz a lei hoje)</li><li>Como ler uma pesquisa de 2º turno sem cair em cilada</li><li>Os 2 planos de governo em 90s: segurança e economia</li><li>&quot;Líder do 1º turno sempre vence?&quot; — o que os dados dizem</li><li>Pra onde vai o voto de quem perdeu no 1º turno?</li></ul>
+  </section>
+
+  <section class="card">
+    <h2>🎬 Roteiros prontos</h2>
+    <ul><li><a href="../02-roteiros/2026-10-07_carrossel_esquerda-e-direita.md">🖼️ Roteiro de Carrossel — &quot;Esquerda e direita: o que isso quer dizer, afinal?&quot;</a></li></ul>
+  </section>
+
+  <section class="card full">
+    <h2>🧭 Fluxo do sistema</h2>
+    <p style="color:var(--mute);margin:0">
+      <span class="chip" style="color:#5AC8BE;border-color:#5AC8BE;">Pesquisa</span>→
+      <span class="chip" style="color:#FFD24C;border-color:#FFD24C;">Pautas</span>→
+      <span class="chip" style="color:#F5A05A;border-color:#F5A05A;">Roteiro</span>→
+      <span class="chip" style="color:#5AC8BE;border-color:#5AC8BE;">Produção</span>→
+      <span class="chip" style="color:#FFD24C;border-color:#FFD24C;">Resultados</span>
+      — os resultados realimentam as pautas.
+    </p>
+  </section>
+</main>
+<footer>Gerado automaticamente a partir do repositório · reconstruído pela rotina diária</footer>
+</body>
+</html>
