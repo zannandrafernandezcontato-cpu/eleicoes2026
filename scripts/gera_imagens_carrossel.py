@@ -95,7 +95,7 @@ def rodape(draw, n, total, handle=None):
     # pontinhos de progresso
     cx = W - MARGIN - total * 26
     for i in range(total):
-        cor = ACCENT if i == n - 1 else (60, 76, 100)
+        cor = ACCENT if i == n - 1 else _hex(_CORES.get("texto_secundario", "#7A5A4C"))
         draw.ellipse([cx + i * 26, y + 6, cx + i * 26 + 14, y + 20], fill=cor)
 
 

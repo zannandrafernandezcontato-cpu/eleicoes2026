@@ -1,16 +1,28 @@
 {
-  "_comment": "Fonte única da identidade visual. Os scripts (ex.: gera_imagens_carrossel.py) leem daqui. Troque pelos valores reais da sua marca e todas as artes se atualizam.",
-  "handle": "@seu_perfil",
+  "_comment": "Paleta oficial do dossiê @zannandra (registrada 07/10/2026). Os scripts leem daqui. Tema claro: fundo areia/papel, tinta marrom. Verde+amarelo saturado da BANDEIRA é reservado ao fecho que nomeia o Lula (regra #7) — não usar como default de arte.",
+  "handle": "@zannandra",
   "cores": {
-    "fundo": "#0F1B2D",
-    "fundo_card": "#16263E",
-    "texto": "#F0F4FA",
-    "texto_secundario": "#96A5B9",
-    "destaque": "#FFD24C",
-    "neutro_a": "#5AC8BE",
-    "neutro_b": "#F5A05A"
+    "fundo": "#EBCCA2",
+    "fundo_card": "#F2E4CC",
+    "texto": "#53382F",
+    "texto_secundario": "#7A5A4C",
+    "destaque": "#4D774E",
+    "neutro_a": "#4D774E",
+    "neutro_b": "#8A6B58"
+  },
+  "paleta_completa": {
+    "marrom_tinta": "#53382F",
+    "verde": "#4D774E",
+    "amarelo_acento": "#F2B134",
+    "areia": "#EBCCA2",
+    "papel": "#F2E4CC",
+    "verde_escuro": "#3C5E3D",
+    "papel_alt": "#F6E3C8",
+    "bege_neutro": "#D8C3A1",
+    "trilho_barra": "#E7D4B5"
   },
   "fontes": {
+    "_nota": "Fontes DA MARCA: Archivo (títulos/corpo) + IBM Plex Mono (dados/rodapé). Não instaladas neste ambiente — os caminhos abaixo são fallback funcional (DejaVu). Para usar as reais, instale os .ttf em 00-marca/fontes/ e aponte aqui.",
     "titulo": "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
     "corpo": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
   }

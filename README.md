@@ -1,8 +1,10 @@
 # 🗳️ Sistema de Conteúdo — Eleições 2026
 
-Sistema dinâmico de apoio à criação de conteúdo sobre as eleições de 2026.
-Pensado para um creator que produz **Reels / TikTok / Shorts** e **carrosséis de Instagram**,
-com linha editorial **análise + opinião + educação cívica** — plural, com fontes, mas com a sua leitura.
+Sistema dinâmico de apoio à comunicação política de **@zannandra** no 2º turno de 2026.
+Formatos: **carrosséis**, **cards**, **vídeos**, **Reels/Stories** e **respostas a comentário**.
+Linha editorial: **partidária (pró-Lula), sem dar brecha — e nunca ao custo de um dado frágil ou falso**.
+A estratégia completa (posicionamento, público, pilares, tom, identidade visual) vive em **[`00-marca/`](00-marca/)** —
+em especial o [`guia-identidade-estrategia.md`](00-marca/guia-identidade-estrategia.md). **Leia a marca antes de produzir.**
 
 > **Momento atual (atualize conforme o calendário):** estamos **entre o 1º e o 2º turno**.
 > 2º turno em **25/10/2026**. Este é o pico de atenção do público — o sistema está calibrado para esse momento.
@@ -55,16 +57,20 @@ Fale comigo em linguagem natural. Exemplos que o sistema entende:
 
 ---
 
-## Princípios editoriais (inegociáveis)
+## Princípios (inegociáveis)
 
-Conteúdo eleitoral exige responsabilidade. Este sistema sempre:
+A postura é **partidária e assumida** — mas a **credibilidade é a arma**, e é ela que faz o conteúdo mover
+quem ainda está na margem. A régua e as regras completas estão no guia da marca; em resumo, toda peça:
 
-1. **Checa a fonte** antes de afirmar. Número de pesquisa sem instituto, data e margem de erro = não publica.
-2. **Mostra os lados** nos conteúdos de análise/educação, mesmo quando há opinião.
-3. **Separa fato de opinião** — quando for sua leitura, fica claro que é opinião.
-4. **Não fabrica** falas, dados, imagens ou "pesquisas". Nada de desinformação.
-5. **Respeita a legislação eleitoral** (TSE) — nada de conteúdo enganoso, deepfake de candidato ou desinformação sobre o processo de votação.
-6. **Cita pesquisas corretamente**: instituto + data + margem de erro + registro no TSE.
+1. **Passa na régua:** faria alguém que *ainda não concorda* parar, se reconhecer e reconsiderar? Se só agrada quem já está do lado, **falhou**.
+2. **Um argumento por peça.** Tese única, testável.
+3. **Fonte no próprio card**, em toda afirmação verificável. **Sem fonte, não entra.** Datar sempre.
+4. **Citação no contexto** — nunca arrancar uma frase do plano do sentido original.
+5. **Não fabrica** falas, dados ou imagens. Nada de estatística frágil ou descontextualizada.
+6. **Remove o sinal tribal, nunca a tese** (viés de posição sim; tiques que fazem descartar antes de ler, não).
+7. **Respeita o TSE** — nada enganoso, nada de deepfake de candidato, nada de desinformação sobre a votação.
+
+> As 10 regras inegociáveis completas e o motor de criação estão em [`00-marca/guia-identidade-estrategia.md`](00-marca/guia-identidade-estrategia.md).
 
 ---
 
