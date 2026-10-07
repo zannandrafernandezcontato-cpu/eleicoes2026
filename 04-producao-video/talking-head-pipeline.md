@@ -41,6 +41,21 @@ Gero a transcrição com marcação de tempo e um arquivo `.srt` em português.
 - **auto-editor** (opcional) — remoção automática de silêncios.
 
 > Se alguma não estiver instalada no ambiente, eu instalo na hora de usar.
+> **Já instaladas e testadas aqui:** ffmpeg 6.1.1, auto-editor 29.3.1, faster-whisper 1.2.1.
+
+### ⚠️ Nota sobre a transcrição automática neste ambiente
+O reenquadre 9:16, o título, a legenda queimada e o corte de silêncios rodam **100% offline**.
+Já a **transcrição automática** (Whisper) precisa baixar o modelo uma vez, e a política de rede
+deste ambiente cloud **bloqueia o host do modelo (HuggingFace)**. Opções:
+1. Rodar o pipeline **com uma legenda `.srt` pronta** (`--srt arquivo.srt`) — funciona perfeitamente.
+2. Liberar o host nas configurações de rede do ambiente (nível de acesso mais amplo ou `huggingface.co`
+   em *Allowed domains*), e aí a transcrição roda sozinha.
+3. Rodar a transcrição na sua máquina (sem esse bloqueio) e trazer o `.srt`.
+
+### Scripts do pipeline
+- **`scripts/edita_talking_head.sh`** — orquestra tudo. Ex.:
+  `scripts/edita_talking_head.sh raw/meu_video.mp4 --titulo "Esquerda x Direita"`
+- **`scripts/transcrever.py`** — gera o `.srt` em português (Whisper).
 
 ## Pastas
 ```

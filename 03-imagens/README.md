@@ -24,6 +24,9 @@ Onde buscar imagens para os conteúdos **com direito de uso** e como não cair e
 ## Banco de referências (registre o que já usou)
 | Tema | Fonte | Link | Licença | Onde usei |
 |---|---|---|---|---|
+| Espectro esquerda/direita | Pixabay | https://pixabay.com/illustrations/search/left%20and%20right/ | Pixabay License (livre, uso comercial) | Carrossel "Esquerda e direita" |
+| Balança / equilíbrio | Pixabay | https://pixabay.com/illustrations/search/balance%20scale/ | Pixabay License | Carrossel "Esquerda e direita" |
+| Política (geral) | Pixabay | https://pixabay.com/illustrations/search/political%20art/ | Pixabay License | — |
 
 ## Como pedir
 *"Acha imagens pra falar de [tema]"* → eu trago opções de bancos livres com o link e a licença de cada uma.
