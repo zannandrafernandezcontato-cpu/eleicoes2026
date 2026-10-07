@@ -4,22 +4,50 @@
 Artes 100% originais (licença sua), tom neutro (sem cores partidárias).
 Uso: python3 gera_imagens_carrossel.py [pasta_saida]
 """
+import json
 import os
 import sys
 from PIL import Image, ImageDraw, ImageFont
 
-# ---- Identidade visual (ajuste à sua marca) ----
+# ---- Identidade visual: lê de 00-marca/marca.json (fonte única), com fallback ----
 W, H = 1080, 1350
-BG = (15, 27, 45)          # navy profundo
-BG2 = (22, 38, 62)         # navy mais claro (cards de conteúdo)
-INK = (240, 244, 250)      # texto claro
-ACCENT = (255, 210, 76)    # amarelo destaque
-MUTE = (150, 165, 185)     # texto secundário
-NEUTRO_A = (90, 200, 190)  # teal (polo A, neutro)
-NEUTRO_B = (245, 160, 90)  # âmbar (polo B, neutro)
 MARGIN = 96
+_HANDLE = "@seu_perfil"
+_DEF = {
+    "fundo": "#0F1B2D", "fundo_card": "#16263E", "texto": "#F0F4FA",
+    "texto_secundario": "#96A5B9", "destaque": "#FFD24C",
+    "neutro_a": "#5AC8BE", "neutro_b": "#F5A05A",
+}
 FONTE = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
 FONTE_B = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
+
+
+def _hex(h):
+    h = h.lstrip("#")
+    return tuple(int(h[i:i + 2], 16) for i in (0, 2, 4))
+
+
+def _carrega_marca():
+    caminho = os.path.join(os.path.dirname(__file__), "..", "00-marca", "marca.json")
+    try:
+        with open(caminho, encoding="utf-8") as f:
+            m = json.load(f)
+        cores = {**_DEF, **m.get("cores", {})}
+        fontes = m.get("fontes", {})
+        return (cores, m.get("handle", _HANDLE),
+                fontes.get("corpo", FONTE), fontes.get("titulo", FONTE_B))
+    except Exception:
+        return (_DEF, _HANDLE, FONTE, FONTE_B)
+
+
+_CORES, HANDLE, FONTE, FONTE_B = _carrega_marca()
+BG = _hex(_CORES["fundo"])
+BG2 = _hex(_CORES["fundo_card"])
+INK = _hex(_CORES["texto"])
+MUTE = _hex(_CORES["texto_secundario"])
+ACCENT = _hex(_CORES["destaque"])
+NEUTRO_A = _hex(_CORES["neutro_a"])
+NEUTRO_B = _hex(_CORES["neutro_b"])
 
 
 def fnt(sz, bold=True):
@@ -60,7 +88,8 @@ def pill(draw, xy, text, font, fill_bg, fill_tx):
     return y + font.size + pad_y * 2
 
 
-def rodape(draw, n, total, handle="@seu_perfil"):
+def rodape(draw, n, total, handle=None):
+    handle = handle or HANDLE
     y = H - 70
     draw.text((MARGIN, y), handle, font=fnt(28, False), fill=MUTE)
     # pontinhos de progresso

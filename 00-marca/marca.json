@@ -1,0 +1,17 @@
+{
+  "_comment": "Fonte única da identidade visual. Os scripts (ex.: gera_imagens_carrossel.py) leem daqui. Troque pelos valores reais da sua marca e todas as artes se atualizam.",
+  "handle": "@seu_perfil",
+  "cores": {
+    "fundo": "#0F1B2D",
+    "fundo_card": "#16263E",
+    "texto": "#F0F4FA",
+    "texto_secundario": "#96A5B9",
+    "destaque": "#FFD24C",
+    "neutro_a": "#5AC8BE",
+    "neutro_b": "#F5A05A"
+  },
+  "fontes": {
+    "titulo": "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+    "corpo": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
+  }
+}
