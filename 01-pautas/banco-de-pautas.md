@@ -9,7 +9,9 @@ Você move para **🟢 Aprovada** o que vai virar roteiro, e para **✅ Publicad
 
 ## 🟢 Aprovadas (vão virar roteiro)
 
-_(mova pautas para cá quando decidir produzir)_
+| # | Pauta | Formato | Ângulo | Status | Roteiro |
+|---|---|---|---|---|---|
+| E1 | Como funciona a esquerda e a direita? | Carrossel (9 cards) | Educação cívica apartidária | ✅ Roteiro pronto | [`2026-10-07_carrossel_esquerda-e-direita.md`](../02-roteiros/2026-10-07_carrossel_esquerda-e-direita.md) |
 
 ---
 
