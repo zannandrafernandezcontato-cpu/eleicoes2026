@@ -28,5 +28,20 @@ Onde buscar imagens para os conteúdos **com direito de uso** e como não cair e
 | Balança / equilíbrio | Pixabay | https://pixabay.com/illustrations/search/balance%20scale/ | Pixabay License | Carrossel "Esquerda e direita" |
 | Política (geral) | Pixabay | https://pixabay.com/illustrations/search/political%20art/ | Pixabay License | — |
 
+## ⭐ Opção sem depender de banco: eu gero a arte
+
+Como o proxy deste ambiente bloqueia APIs de imagem, a melhor saída (e muitas vezes a melhor arte)
+é **eu gerar as imagens originais por código** — licença 100% sua, na identidade do seu feed, sem risco de copyright.
+
+- **`scripts/gera_imagens_carrossel.py`** — renderiza um carrossel inteiro (1080×1350, 4:5) a partir de um
+  roteiro: capa, cards de conteúdo, réguas e quadrante (espectro político), numeração e @ do perfil.
+  Cores neutras (sem vermelho/azul partidário). Rode com:
+  `python3 scripts/gera_imagens_carrossel.py`
+  → saída em `03-imagens/gerado/<tema>/card-XX.png`.
+
+Para ajustar cores/fonte à sua marca, edite o bloco "Identidade visual" no topo do script.
+Exemplo já gerado: `03-imagens/gerado/esquerda-e-direita/`.
+
 ## Como pedir
-*"Acha imagens pra falar de [tema]"* → eu trago opções de bancos livres com o link e a licença de cada uma.
+- *"Gera as artes do carrossel X"* → eu adapto o gerador ao roteiro e entrego os PNGs prontos.
+- *"Acha imagens pra falar de [tema]"* → eu trago opções de bancos livres (links + licença), via busca web.

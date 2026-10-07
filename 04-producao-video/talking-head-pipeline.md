@@ -48,14 +48,25 @@ O reenquadre 9:16, o título, a legenda queimada e o corte de silêncios rodam *
 Já a **transcrição automática** (Whisper) precisa baixar o modelo uma vez, e a política de rede
 deste ambiente cloud **bloqueia o host do modelo (HuggingFace)**. Opções:
 1. Rodar o pipeline **com uma legenda `.srt` pronta** (`--srt arquivo.srt`) — funciona perfeitamente.
-2. Liberar o host nas configurações de rede do ambiente (nível de acesso mais amplo ou `huggingface.co`
-   em *Allowed domains*), e aí a transcrição roda sozinha.
+2. Liberar os hosts de modelo nas configurações de rede do ambiente cloud (menu do ambiente na barra
+   de título → **Edit** → *Network access*): use um nível de acesso mais amplo, ou adicione em
+   *Allowed domains* os hosts **`huggingface.co`** e **`cdn-lfs.huggingface.co`** (deixe marcada a
+   caixa que inclui os gerenciadores de pacote). Guia: https://code.claude.com/docs/en/cloud-environments#network-access
+   Isso libera a transcrição automática **e** as APIs de busca de imagem.
 3. Rodar a transcrição na sua máquina (sem esse bloqueio) e trazer o `.srt`.
+
+### ⭐ Legenda sem transcrição (solução offline, recomendada aqui)
+Como você trabalha com **roteiro**, dá pra pular o Whisper: a legenda sai do próprio texto que você leu.
+- **`scripts/roteiro_para_srt.py`** — recebe o texto falado + a duração do vídeo e gera o `.srt`
+  com tempos proporcionais. Ex.: `python3 scripts/roteiro_para_srt.py narracao.txt 58 narracao.srt`
+- Depois roda o pipeline com `--srt narracao.srt`. Zero dependência de rede.
+- Fluxo: grave lendo o roteiro → me diga a duração → eu gero a legenda → Reel pronto (ajuste fino no editor, se quiser).
 
 ### Scripts do pipeline
 - **`scripts/edita_talking_head.sh`** — orquestra tudo. Ex.:
   `scripts/edita_talking_head.sh raw/meu_video.mp4 --titulo "Esquerda x Direita"`
-- **`scripts/transcrever.py`** — gera o `.srt` em português (Whisper).
+- **`scripts/roteiro_para_srt.py`** — legenda a partir do roteiro (offline). **Recomendado neste ambiente.**
+- **`scripts/transcrever.py`** — legenda por transcrição automática (Whisper). Requer liberar a rede (abaixo).
 
 ## Pastas
 ```
