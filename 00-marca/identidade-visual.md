@@ -29,10 +29,10 @@ data-viz com **eixo no zero** + fonte no gráfico · card de fechamento blindado
 C1 três chaves · C2 planos frente a frente · C3 mapa+carimbos · C4 bolha WhatsApp+nota fiscal ·
 C5 comprimidos cuidar/direito · C6 data-viz de dossiê · C7 mapa do poder · Agro nota fiscal rural.
 
-## ⚠️ Decisões em aberto (do próprio guia)
-1. **Dois fundos claros** circulando (`#EBCCA2` areia e `#F2E4CC` papel) — escolher um padrão?
-2. **Tipografia divergente:** §5.5 diz Archivo + IBM Plex Mono; §6.3 (vídeo) cita Bricolage Grotesque + IBM Plex Sans. Padronizar.
-3. **Regra #7 × paleta:** a paleta oficial tem verde e amarelo; a regra, lida ao pé da letra, restringe. O guia já resolve (mira o par *saturado* da bandeira), mas vale decisão explícita + fixar os hex do verde-amarelo do fecho.
+## ✅ Decisões batidas (07/10, reversível — é só avisar)
+1. **Fundo padrão = areia `#EBCCA2`.** Papel `#F2E4CC` fica **reservado** às peças de cara "dossiê/data-viz". Um fundo só como regra, dois tons só por função.
+2. **Tipografia canônica = Archivo (títulos/corpo) + IBM Plex Mono (dados/rodapé)** — é a registrada na base (§5.5). A menção a Bricolage/IBM Plex Sans na §6.3 (vídeo) fica **alinhada a isso**; vídeo usa a mesma dupla.
+3. **Regra #7 mantida como o guia resolve:** o dossiê corre com verde-oliva e âmbar **dessaturados**; o **verde-amarelo saturado da bandeira** entra só no fecho que nomeia o Lula. *Pendente mínimo:* fixar os **hex exatos** desse verde-amarelo do fecho a partir de um card publicado (me manda um que eu extraio).
 
 ## Sobre as artes geradas por código (importante)
 Seu sistema visual é **bespoke por peça**, feito no **canvas do Claude Design**. O gerador

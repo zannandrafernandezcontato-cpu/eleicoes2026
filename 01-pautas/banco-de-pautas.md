@@ -1,41 +1,45 @@
-# 🗂️ Banco de Pautas
+# 🗂️ Banco de Peças
 
-Backlog de ideias qualificadas. A rotina diária adiciona sugestões no topo de **🟡 A avaliar**.
-Você move para **🟢 Aprovada** o que vai virar roteiro, e para **✅ Publicada** o que já saiu.
+Organizado pelo **motor** (guia §3.2): toda peça tem **gatilho · frente de público · insight · UM argumento · formato · status**.
+Regra de entrada: passa na **régua** (move alguém que *ainda não concorda*?). Se não passa, **morre aqui**.
 
-**Legenda de urgência:** 🔥 Alta (reativa, perde validade rápido) · 🟠 Média · 🔵 Perene (serve a qualquer momento)
+**Status:** 🟡 A avaliar · 🟢 Aprovada (vira peça) · ✅ Publicada
+**Frentes (guia §2):** abstencionista · direita mole/isento · classe média/MEI · PCD · agro-MT · exterior · eleitor+indeciso · (parqueada) direita anti-bolso
 
 ---
 
-## 🟢 Aprovadas (vão virar roteiro)
+## 🟢 Aprovadas / em produção
 
-| # | Pauta | Formato | Ângulo | Status | Roteiro |
-|---|---|---|---|---|---|
-| E1 | Como funciona a esquerda e a direita? | Carrossel (9 cards) | Educação cívica apartidária | ✅ Roteiro pronto | [`2026-10-07_carrossel_esquerda-e-direita.md`](../02-roteiros/2026-10-07_carrossel_esquerda-e-direita.md) |
+| Frente | Argumento (único) | Formato | Status |
+|---|---|---|---|
+| _(suas peças C1–C7 e Agro vivem na BASE do Projeto; traga pra cá a que estiver em produção)_ | | | |
 
 ---
 
 ## 🟡 A avaliar
 
-| # | Pauta | Formato | Ângulo | Urgência | Origem |
+| # | Gatilho | Frente | Insight / argumento | Formato | Passa na régua? |
 |---|---|---|---|---|---|
-| 5 | Maioridade penal: o que cada lado propõe (e o que diz a lei hoje) | Carrossel | Educativo, pluraliza | 🟠 Média | Briefing 07/10 |
-| 4 | Como ler uma pesquisa de 2º turno sem cair em cilada | Carrossel | Educação cívica | 🟠 Média | Briefing 07/10 |
-| 3 | Os 2 planos de governo em 90s: segurança e economia | Reel | Comparação factual | 🔥 Alta | Briefing 07/10 |
-| 2 | "Líder do 1º turno sempre vence?" — o que os dados dizem | Reel | Análise com contexto | 🔥 Alta | Briefing 07/10 |
-| 1 | Pra onde vai o voto de quem perdeu no 1º turno? | Carrossel | Educação | 🔥 Alta | Briefing 07/10 |
+| _(a rotina diária e você adicionam aqui, a partir de gatilhos reais: fato do dia, fala do adversário, objeção de comentário)_ | | | | | |
+
+### Territórios candidatos (frentes ainda não abertas — guia §2)
+Abrir conforme oportunidade; cada um passa pelo motor antes de virar peça.
+- **Jovens / primeiro voto** — o que cada plano escreve sobre educação/primeiro emprego.
+- **Mulheres** (só com sub-recorte definido).
+- **Evangélicos de baixa renda** — interesse concreto acima de identidade.
+- **Servidores** — o que muda com reforma administrativa / "tesouraço".
+- **Migrante Norte/Nordeste em MT.**
+- **Quem decide em cima da hora** — formato de véspera, só fato com fonte.
 
 ---
 
 ## ✅ Publicadas
-
-_(registre aqui o que já foi ao ar — link + data; depois cruze com `05-resultados/`)_
-
-| Data | Pauta | Formato | Link | Resultado |
+| Data | Peça | Frente | Link | Resultado |
 |---|---|---|---|---|
 
 ---
 
-## Como qualifico uma pauta
-Toda pauta que entra aqui tem: **formato** (Reel/carrossel), **ângulo** (qual leitura), **urgência** e **origem**.
-Me peça *"qualifica essa ideia: ..."* e eu preencho tudo e já sugiro o gancho.
+## 🗄️ Arquivo (pré-realinhamento — não passam na régua)
+Peças/pautas da fase "neutra/educacional", mantidas só como referência:
+- Carrossel "Esquerda e direita" → `02-roteiros/_arquivo/` (educativo genérico; não é da série).
+- Pautas neutras do briefing 07/10 (voto de quem perdeu, como ler pesquisa, etc.) — arquivadas.
