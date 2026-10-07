@@ -1,0 +1,18 @@
+# Vídeos crus e exports — pesados, não versionar
+04-producao-video/raw/*
+04-producao-video/pronto/*
+04-producao-video/legendas/*
+!04-producao-video/raw/.gitkeep
+!04-producao-video/pronto/.gitkeep
+!04-producao-video/legendas/.gitkeep
+
+# Arquivos de mídia soltos
+*.mp4
+*.mov
+*.mp3
+*.wav
+
+# Sistema
+.DS_Store
+Thumbs.db
+*.tmp
