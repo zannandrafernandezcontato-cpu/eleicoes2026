@@ -1,28 +1,20 @@
-# ⏰ Rotina automática diária
+# ⏱️ Inteligência sob demanda (com você no circuito)
 
-Uma rotina agendada roda **sozinha toda manhã** (horário de Brasília), pesquisa o cenário
-e entrega o briefing do dia — sem você precisar pedir.
+> **Decisão (07/10):** a rotina **automática** foi **desligada**. Conteúdo partidário passa pelos seus
+> olhos antes de qualquer coisa — "crítica antes da copy". Nada de robô publicando sozinho.
 
-## O que ela faz a cada manhã
-1. Atualiza o repositório (pega a última versão da branch).
-2. Pesquisa na web: fato do dia, tendências políticas e temas sociais ligados às eleições 2026.
-3. Gera `00-inteligencia/briefings/AAAA-MM-DD.md` com: o que está quente, tendências, temas sociais e **5 pautas sugeridas**.
-4. Adiciona as pautas novas em `01-pautas/banco-de-pautas.md` (seção *A avaliar*).
-5. Atualiza `tendencias.md` e `temas-sociais.md` se algo mudou.
-6. Faz commit e push na branch do projeto.
-7. Respeita os **princípios editoriais** do `README.md` (checar fonte, mostrar os lados, nada de desinformação).
+## Como funciona agora
+Você me chama quando quiser a leitura do dia. Eu pesquiso na hora (com fonte e data), aplico o seu método
+e **você revisa** antes de qualquer peça sair.
 
-Quando acordar, é só abrir o briefing do dia e escolher o que produzir.
+**Comandos:**
+- *"roda a inteligência de hoje"* → eu levanto: o que o adversário fez que pede resposta, aberturas pra mover persuadável, flancos a antecipar — tudo com fonte. Salvo em `00-inteligencia/briefings/`.
+- *"o adversário disse X, como respondo?"* → monto a resposta pelo motor (um argumento, sem sinal tribal, com fonte).
+- *"tem gatilho pra [frente de público]?"* → busco ângulos pra aquela frente.
 
-## Horário
-Configurada para rodar **toda manhã (~06:50, horário de Brasília)**.
-Quer outro horário, ou só em dias específicos? Me diga que eu ajusto.
+## O que NÃO existe mais
+- Briefing partidário gerado e publicado automático, sem revisão. (Barrado por segurança — e correto: exige supervisão humana.)
 
-## Ligar / desligar / ajustar
-- **Pausar:** "pausa a rotina diária".
-- **Mudar horário:** "roda a rotina às 7h30".
-- **Rodar agora:** "roda o briefing de hoje".
-- **Retomar:** "religa a rotina diária".
-
-> A rotina abre uma sessão nova a cada manhã (não depende desta janela ficar aberta).
-> O resultado chega pronto no repositório.
+## Religar algo automático?
+Só um **monitor factual neutro** (fatos/pesquisas com fonte, sem ângulo) poderia rodar sozinho — o ângulo
+partidário é sempre nosso, junto. Se quiser esse monitor, me avise que eu proponho.
